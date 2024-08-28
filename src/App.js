@@ -90,6 +90,8 @@ import PaymentMethordPage from './Pages/settings/paymentMethord/Index';
 import EmailTempletPage from './Pages/settings/emailTemplates/Index';
 import SocialMediaLogInPage from './Pages/settings/socialMediaLogIn/Index';
 import PremiumMembersPage from './Pages/members/premiumMembersPage';
+import BookingPage from './Pages/modules/bookings/index.js';
+import AddBooking from './Components/modules/booking/AddBooking.js';
 
 
 function App() {
@@ -183,12 +185,22 @@ function App() {
           <Route path='email-templates' element={<EmailTempletPage />} />
           <Route path='social-media-login-settings' element={<SocialMediaLogInPage />} />
 
-          <Route path='staffs' element={<AllStaffsPage/>} />
-          <Route path='staffs/Edit' element={<StaffsEdit  />} />
+          <Route path='staffs' element={<AllStaffsPage />} />
+          <Route path='staffs/Edit' element={<StaffsEdit />} />
           <Route path='staffs/create' element={<AddNewStaffs />} />
           <Route path='roles' element={<StaffRolesPage />} />
           <Route path='roles/create' element={<AddnewRole />} />
-          <Route path='roles/Edit' element={<StaffRolesEdit/>} />
+          <Route path='roles/Edit' element={<StaffRolesEdit />} />
+
+
+
+          {/* agonda */}
+
+          <Route path='booking' element={<BookingPage />} />
+          <Route path='add_booking' element={<AddBooking />} />
+
+
+          {/* agonda */}
 
         </Route>
       </Routes>

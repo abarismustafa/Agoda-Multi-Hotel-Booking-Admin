@@ -63,6 +63,12 @@ function Aside() {
                 </Link>
                 <ul className={`aiz-side-nav-list level-2 mm-collapse ${members ? "mm-show" : "extra"}`}
                 >
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="booking" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Bookings</span>
+                    </Link>
+                  </li>
                   <li className="aiz-side-nav-item">
                     <Link to="members" className="aiz-side-nav-link  ">
                       <span className="aiz-side-nav-text">Free Members</span>
