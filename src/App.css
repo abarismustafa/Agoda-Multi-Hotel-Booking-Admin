@@ -1,0 +1,106 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #6d6e6f;
+}
+
+:root {
+  --primary: #fd2c79;
+  --hov-primary: #fd2c79;
+  --soft-primary: rgba(253, 44, 121, 0.15);
+  --secondary: #fd655b;
+  --soft-secondary: rgba(253, 101, 91, 0.15);
+}
+
+.text-primary-grad {
+  background: rgb(253, 41, 123);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary,
+.bg-primary-grad {
+  background: rgb(253, 41, 123);
+  background: -moz-linear-gradient(
+    225deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+  background: linear-gradient(
+    225deg,
+    rgba(253, 44, 121, 1) 0%,
+    rgba(253, 101, 91, 1) 100%
+  );
+}
+
+.fill-dark {
+  fill: #4d4d4d;
+}
+
+.fill-primary-grad stop:nth-child(1) {
+  stop-color: rgba(253, 101, 91, 1);
+}
+
+.fill-primary-grad stop:nth-child(2) {
+  stop-color: rgba(253, 44, 121, 1);
+}
+
