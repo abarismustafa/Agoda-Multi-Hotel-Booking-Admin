@@ -1,4 +1,4 @@
-import Booking from "../../../Components/modules/booking/Booking"
+import Booking from "../../../components/modules/booking/Booking"
 
 function BookingPage() {
     return (
