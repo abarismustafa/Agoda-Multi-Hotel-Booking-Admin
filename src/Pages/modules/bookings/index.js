@@ -1,10 +1,10 @@
-import Booking from "../../../components/modules/booking/Booking"
+import Booking from "../../../components/modules/booking/Booking";
 
 function BookingPage() {
-    return (
-        <>
-            <Booking />
-        </>
-    )
+  return (
+    <>
+      <Booking />
+    </>
+  );
 }
-export default BookingPage
+export default BookingPage;

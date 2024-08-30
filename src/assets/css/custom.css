@@ -1,0 +1,15 @@
+.head-title {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+.image-link > img {
+  width: 160px;
+  height: 70px;
+}
+
+.table-cell:where(th, td) {
+  display: table-cell;
+}
+
+a:hover {
+  color: #FD2C79;
+}

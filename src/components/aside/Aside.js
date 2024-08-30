@@ -27,8 +27,8 @@ function Aside() {
 
   return (
     <>
-      <div className="aiz-sidebar-wrap" id='myDIV'>
-        <div className="aiz-sidebar left c-scrollbar" >
+      <div className="aiz-sidebar-wrap" id="myDIV">
+        <div className="aiz-sidebar left c-scrollbar">
           <div className="aiz-side-nav-logo-wrap">
             <a
               href="https://demo.activeitzone.com/matrimonial/admin/dashboard"
@@ -55,18 +55,36 @@ function Aside() {
               {/* Member Manage */}
               <li className="aiz-side-nav-item">
                 <Link
-                  to="#" className="aiz-side-nav-link" onClick={() => { setMembers(!members); }}
+                  to="#"
+                  className="aiz-side-nav-link"
+                  onClick={() => {
+                    setMembers(!members);
+                  }}
                 >
                   <i className="las la-user aiz-side-nav-icon" />
-                  <span className="aiz-side-nav-text">Members</span>
+                  <span className="aiz-side-nav-text">Modules</span>
                   <span className="aiz-side-nav-arrow" />
                 </Link>
-                <ul className={`aiz-side-nav-list level-2 mm-collapse ${members ? "mm-show" : "extra"}`}
+                <ul
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    members ? "mm-show" : "extra"
+                  }`}
                 >
-
                   <li className="aiz-side-nav-item">
                     <Link to="booking" className="aiz-side-nav-link  ">
                       <span className="aiz-side-nav-text">Bookings</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="Hotels" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Hotels</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="rooms" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Rooms</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
@@ -80,8 +98,13 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="activate_sessions_list" className="aiz-side-nav-link  ">
-                      <span className="aiz-side-nav-text">Activate Sessions</span>
+                    <Link
+                      to="activate_sessions_list"
+                      className="aiz-side-nav-link  "
+                    >
+                      <span className="aiz-side-nav-text">
+                        Activate Sessions
+                      </span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
@@ -90,10 +113,7 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="destinations"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="destinations" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Destinations</span>
                     </Link>
                   </li>
@@ -103,8 +123,13 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="reported-members/all" className="aiz-side-nav-link">
-                      <span className="aiz-side-nav-text">Reported Members</span>
+                    <Link
+                      to="reported-members/all"
+                      className="aiz-side-nav-link"
+                    >
+                      <span className="aiz-side-nav-text">
+                        Reported Members
+                      </span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
@@ -129,8 +154,9 @@ function Aside() {
                       <span className="aiz-side-nav-arrow" />
                     </Link>
                     <ul
-                      className={`aiz-side-nav-list level-2 mm-collapse ${profileAttribute ? "mm-show" : "extra"
-                        }`}
+                      className={`aiz-side-nav-list level-2 mm-collapse ${
+                        profileAttribute ? "mm-show" : "extra"
+                      }`}
                     >
                       <li className="aiz-side-nav-item">
                         <Link to="religions" className="aiz-side-nav-link">
@@ -148,7 +174,10 @@ function Aside() {
                         </Link>
                       </li>
                       <li className="aiz-side-nav-item">
-                        <Link to="member-languages" className="aiz-side-nav-link">
+                        <Link
+                          to="member-languages"
+                          className="aiz-side-nav-link"
+                        >
                           <span className="aiz-side-nav-text">
                             Member Language
                           </span>
@@ -176,16 +205,23 @@ function Aside() {
                       </li>
                       <li className="aiz-side-nav-item">
                         <Link to="family-values" className="aiz-side-nav-link">
-                          <span className="aiz-side-nav-text">Family Values</span>
+                          <span className="aiz-side-nav-text">
+                            Family Values
+                          </span>
                         </Link>
                       </li>
                       <li className="aiz-side-nav-item">
                         <Link to="family-status" className="aiz-side-nav-link">
-                          <span className="aiz-side-nav-text">Family Status</span>
+                          <span className="aiz-side-nav-text">
+                            Family Status
+                          </span>
                         </Link>
                       </li>
                       <li className="aiz-side-nav-item">
-                        <Link to="marital-statuses" className="aiz-side-nav-link">
+                        <Link
+                          to="marital-statuses"
+                          className="aiz-side-nav-link"
+                        >
                           <span className="aiz-side-nav-text">
                             Marital Statuses
                           </span>
@@ -194,8 +230,13 @@ function Aside() {
                     </ul>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="member-profile-sections" className="aiz-side-nav-link">
-                      <span className="aiz-side-nav-text">Profile Sections</span>
+                    <Link
+                      to="member-profile-sections"
+                      className="aiz-side-nav-link"
+                    >
+                      <span className="aiz-side-nav-text">
+                        Profile Sections
+                      </span>
                     </Link>
                   </li>
                 </ul>
@@ -227,8 +268,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${wallet ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    wallet ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link
@@ -272,8 +314,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${blog ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    blog ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link to="blog-all-Post" className="aiz-side-nav-link ">
@@ -301,8 +344,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${marketing ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    marketing ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link to="newsletter" className="aiz-side-nav-link">
@@ -325,8 +369,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${referal ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    referal ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link
@@ -345,7 +390,9 @@ function Aside() {
                   </li>
                   <li className="aiz-side-nav-item">
                     <Link to="referal/earnings" className="aiz-side-nav-link">
-                      <span className="aiz-side-nav-text">Referral Earnings</span>
+                      <span className="aiz-side-nav-text">
+                        Referral Earnings
+                      </span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
@@ -375,8 +422,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${supportTicket ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    supportTicket ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link to="active-ticket" className="aiz-side-nav-link ">
@@ -401,12 +449,15 @@ function Aside() {
                         setSupportSetting(!supportSetting);
                       }}
                     >
-                      <span className="aiz-side-nav-text">Support Settings</span>
+                      <span className="aiz-side-nav-text">
+                        Support Settings
+                      </span>
                       <span className="aiz-side-nav-arrow" />
                     </Link>
                     <ul
-                      className={`aiz-side-nav-list level-2 mm-collapse ${supportSetting ? "mm-show" : "extra"
-                        }`}
+                      className={`aiz-side-nav-list level-2 mm-collapse ${
+                        supportSetting ? "mm-show" : "extra"
+                      }`}
                     >
                       <li className="aiz-side-nav-item">
                         <Link
@@ -444,8 +495,9 @@ function Aside() {
                   <span className="aiz-side-nav-arrow" />
                 </Link>
                 <ul
-                  className={`aiz-side-nav-list level-2 mm-collapse ${otpSystem ? "mm-show" : "extra"
-                    }`}
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    otpSystem ? "mm-show" : "extra"
+                  }`}
                 >
                   <li className="aiz-side-nav-item">
                     <Link to="sms-templates" className="aiz-side-nav-link">
@@ -478,29 +530,51 @@ function Aside() {
               </li>
               {/* Website Setup */}
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link" onClick={() => { setWebsiteSetup(!websiteSetup) }}>
+                <Link
+                  to="#"
+                  className="aiz-side-nav-link"
+                  onClick={() => {
+                    setWebsiteSetup(!websiteSetup);
+                  }}
+                >
                   <i className="las la-desktop aiz-side-nav-icon" />
                   <span className="aiz-side-nav-text">Website Setup</span>
                   <span className="aiz-side-nav-arrow" />
                 </Link>
-                <ul className={`aiz-side-nav-list level-2 mm-collapse ${websiteSetup ? "mm-show" : "extra"}`}>
+                <ul
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    websiteSetup ? "mm-show" : "extra"
+                  }`}
+                >
                   <li className="aiz-side-nav-item">
-                    <Link to="website/header_settings" className="aiz-side-nav-link">
+                    <Link
+                      to="website/header_settings"
+                      className="aiz-side-nav-link"
+                    >
                       <span className="aiz-side-nav-text">Header</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="website/footer_settings" className="aiz-side-nav-link">
+                    <Link
+                      to="website/footer_settings"
+                      className="aiz-side-nav-link"
+                    >
                       <span className="aiz-side-nav-text">Footer</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="website/custom-pages" className="aiz-side-nav-link ">
+                    <Link
+                      to="website/custom-pages"
+                      className="aiz-side-nav-link "
+                    >
                       <span className="aiz-side-nav-text">Pages</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="website/appearances" className="aiz-side-nav-link">
+                    <Link
+                      to="website/appearances"
+                      className="aiz-side-nav-link"
+                    >
                       <span className="aiz-side-nav-text">Appearance</span>
                     </Link>
                   </li>
@@ -508,34 +582,36 @@ function Aside() {
               </li>
               {/* General settings */}
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link" onClick={() => { setGeneralSettings(!generalSettings) }}>
+                <Link
+                  to="#"
+                  className="aiz-side-nav-link"
+                  onClick={() => {
+                    setGeneralSettings(!generalSettings);
+                  }}
+                >
                   <i className="las la-cog aiz-side-nav-icon" />
                   <span className="aiz-side-nav-text">Settings</span>
                   <span className="aiz-side-nav-arrow" />
                 </Link>
-                <ul className={`aiz-side-nav-list level-2 mm-collapse ${generalSettings ? "mm-show" : "extra"
-                  }`}>
+                <ul
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    generalSettings ? "mm-show" : "extra"
+                  }`}
+                >
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="general-settings"
-                      className="aiz-side-nav-link"
-                    >
-                      <span className="aiz-side-nav-text">General Settings</span>
+                    <Link to="general-settings" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">
+                        General Settings
+                      </span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="languages"
-                      className="aiz-side-nav-link "
-                    >
+                    <Link to="languages" className="aiz-side-nav-link ">
                       <span className="aiz-side-nav-text">Language</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="currencies"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="currencies" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Currency</span>
                     </Link>
                   </li>
@@ -548,18 +624,12 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="smtp-settings"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="smtp-settings" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">SMTP Settings</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="email-templates"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="email-templates" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Email Templates</span>
                     </Link>
                   </li>
@@ -587,27 +657,30 @@ function Aside() {
               </li>
               {/* Staff */}
 
-
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link" onClick={() => { setStaffs(!staffs); }}>
+                <Link
+                  to="#"
+                  className="aiz-side-nav-link"
+                  onClick={() => {
+                    setStaffs(!staffs);
+                  }}
+                >
                   <i className="las la-user-tie aiz-side-nav-icon" />
                   <span className="aiz-side-nav-text">Staffs</span>
                   <span className="aiz-side-nav-arrow" />
                 </Link>
-                <ul className={`aiz-side-nav-list level-2 mm-collapse ${staffs ? "mm-show" : "extra"}`}>
+                <ul
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    staffs ? "mm-show" : "extra"
+                  }`}
+                >
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="staffs"
-                      className="aiz-side-nav-link "
-                    >
+                    <Link to="staffs" className="aiz-side-nav-link ">
                       <span className="aiz-side-nav-text">All staffs</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="roles"
-                      className="aiz-side-nav-link "
-                    >
+                    <Link to="roles" className="aiz-side-nav-link ">
                       <span className="aiz-side-nav-text">Staff Roles</span>
                     </Link>
                   </li>
@@ -615,25 +688,29 @@ function Aside() {
               </li>
               {/* System */}
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link" onClick={() => { setSystem(!system) }}>
+                <Link
+                  to="#"
+                  className="aiz-side-nav-link"
+                  onClick={() => {
+                    setSystem(!system);
+                  }}
+                >
                   <i className="las la-dharmachakra aiz-side-nav-icon" />
                   <span className="aiz-side-nav-text">System</span>
                   <span className="aiz-side-nav-arrow" />
                 </Link>
-                <ul className={`aiz-side-nav-list level-2 mm-collapse ${system ? "mm-show" : "extra"}`}>
+                <ul
+                  className={`aiz-side-nav-list level-2 mm-collapse ${
+                    system ? "mm-show" : "extra"
+                  }`}
+                >
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="system/update"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="system/update" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Update</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="server-status"
-                      className="aiz-side-nav-link"
-                    >
+                    <Link to="server-status" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Server status</span>
                     </Link>
                   </li>
@@ -641,10 +718,7 @@ function Aside() {
               </li>
               {/* Addon Manager */}
               <li className="aiz-side-nav-item">
-                <Link
-                  to="addons"
-                  className="aiz-side-nav-link "
-                >
+                <Link to="addons" className="aiz-side-nav-link ">
                   <i className="las la-wrench aiz-side-nav-icon" />
                   <span className="aiz-side-nav-text">Addon Manager</span>
                 </Link>

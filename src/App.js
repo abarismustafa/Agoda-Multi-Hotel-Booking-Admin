@@ -1,11 +1,11 @@
-import './assets/css/vendors.css';
-import './assets/css/aiz-core.css';
+import "./assets/css/vendors.css";
+import "./assets/css/aiz-core.css";
+import "./assets/css/custom.css";
 
-
-import { Navigate, Route, Routes } from 'react-router-dom';
-import AdminPage from './Pages/admin';
-import DashboardPage from './Pages/dashboardPage';
-import FooterComp from './components/commonComponents/footer/Footer';
+import { Navigate, Route, Routes } from "react-router-dom";
+import AdminPage from "./Pages/admin";
+import DashboardPage from "./Pages/dashboardPage";
+import FooterComp from "./components/commonComponents/footer/Footer.js";
 // import FreeMembersPage from './Pages/members/freeMembersPage';
 // import AddNewMembersPage from './Pages/members/freeMembersPage/addnewMembersPage';
 // import MembersDetail from './Components/members/freeMembers/allMembers/MembersDetail';
@@ -90,22 +90,28 @@ import FooterComp from './components/commonComponents/footer/Footer';
 // import EmailTempletPage from './Pages/settings/emailTemplates/Index';
 // import SocialMediaLogInPage from './Pages/settings/socialMediaLogIn/Index';
 // import PremiumMembersPage from './Pages/members/premiumMembersPage';
-import BookingPage from './Pages/modules/bookings/index.js';
-import AddBooking from './components/modules/booking/AddBooking.js';
-import ActivitesPage from './Pages/modules/Activities/index.js';
-import AddActivity from './components/modules/Activity/AddActivity.js';
-import ActivitesSessionPage from './Pages/modules/ActivitiesSession/index.js';
-import AddActivitysess from './components/modules/Activitysession/AddActivity.js';
-import Service from './Pages/modules/services/index.js';
-import AddServices from './components/modules/services/addServices/AddServices.js';
-import AddFacilities from './components/modules/facilities/addFacilities/AddFacilities.js';
-import Facilitie from './Pages/modules/facilities/index.js';
-import Destination from './Pages/modules/destination/index.js';
+import BookingPage from "./Pages/modules/bookings/index.js";
+import AddBooking from "./components/modules/booking/AddBooking.js";
+import Hotelspage from "./Pages/modules/hotels/index.js";
+import RoomsPage from "./Pages/modules/rooms/index.js";
+import AddHotel from "./components/modules/hotels/addHotel/AddHotel.js";
+import EditHotel from "./components/modules/hotels/editHotel/EditHotel.js";
+import AddRoom from "./components/modules/rooms/addRoom/AddRoom.js";
+import TaxesPage from "./Pages/modules/taxes/index.js";
+
+import Service from "./Pages/modules/services/index.js"
+import AddServices from "./components/modules/services/addServices/AddServices.js"
+import Facilitie from "./Pages/modules/facilities/index.js"
+import AddFacilities from "./components/modules/facilities/addFacilities/AddFacilities.js"
+import Destination from "./Pages/modules/destination/index.js"
+
+import AddActivitysess from "./components/modules/Activitysession/AddActivity.js";
+import ActivitesPage from "./Pages/modules/Activities/index.js";
+import AddActivity from "./components/modules/Activity/AddActivity.js";
+import ActivitesSessionPage from "./Pages/modules/ActivitiesSession/index.js";
 
 
 function App() {
-
-
   return (
     <div className="App">
       <Routes>
@@ -201,8 +207,8 @@ function App() {
 
           {/* agonda */}
 
-          <Route path='booking' element={<BookingPage />} />
-          <Route path='add_booking' element={<AddBooking />} />
+          <Route path="booking" element={<BookingPage />} />
+          <Route path="add_booking" element={<AddBooking />} />
           <Route path='services' element={<Service />} />
           <Route path='add_services' element={<AddServices />} />
           <Route path='facilities' element={< Facilitie  />} />
@@ -216,9 +222,26 @@ function App() {
 
           <Route path='*' element={<h3>NO PAGE FOUND .</h3>} />
 
+          {/* HOTELS---DAUD--- */}
+          {/* HOTELS */}
+          <Route path="Hotels" element={<Hotelspage />} />
+          <Route
+            path="Hotels/add-hotel"
+            element={<AddHotel title="Add Hotel" />}
+          />
+          <Route
+            path="Hotels/Edit-hotel"
+            element={<EditHotel title="Edit Hotel" />}
+          />
 
+          {/* ---ROOMS--- */}
+          <Route path="rooms" element={<RoomsPage />} />
+          <Route path="rooms/addroom" element={<AddRoom />} />
+
+          {/* --taxes */}
+
+          <Route path="rooms" element={<TaxesPage />} />
           {/* agonda */}
-
         </Route>
       </Routes>
       <FooterComp />
@@ -226,4 +249,3 @@ function App() {
   );
 }
 export default App;
-

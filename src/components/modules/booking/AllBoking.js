@@ -3,18 +3,18 @@ import { Table } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 function AllBooking() {
-    const [dropdown, setDropdown] = useState(false)
-    return (
-        <>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="card">
-                        <div className="card-header row gutters-5">
-                            <div className="col text-center text-md-left">
-                                <h5 className="mb-md-0 h6">All Bookings</h5>
-                            </div>
-                            <div className="col-md-3">
-                                {/* <form id="sort_members" >
+  const [dropdown, setDropdown] = useState(false);
+  return (
+    <>
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="card">
+            <div className="card-header row gutters-5">
+              <div className="col text-center text-md-left">
+                <h5 className="mb-md-0 h6">All Bookings</h5>
+              </div>
+              <div className="col-md-3">
+                {/* <form id="sort_members" >
                                     <div className="input-group input-group-sm">
                                         <input type="text" className="form-control" id="search" name="search" placeholder="Type first name / last name / ID & Enter" fdprocessedid="hh7lxk" />
                                     </div>
@@ -69,7 +69,7 @@ function AllBooking() {
 
 
 
-                                        {/* <td className="text-right footable-last-visible" >
+                    {/* <td className="text-right footable-last-visible" style={{ display: 'table-cell' }}>
                                             <div className="btn-group mb-2">
                                                 <div className="btn-group">
                                                     <button type="button" className="btn py-0" aria-expanded="false" onClick={() => { setDropdown(!dropdown) }}>
@@ -100,4 +100,4 @@ function AllBooking() {
         </>
     )
 }
-export default AllBooking
+export default AllBooking;
