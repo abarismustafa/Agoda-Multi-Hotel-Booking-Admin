@@ -1,11 +1,11 @@
-import './assets/css/vendors.css';
-import './assets/css/aiz-core.css';
+import "./assets/css/vendors.css";
+import "./assets/css/aiz-core.css";
+import "./assets/css/custom.css";
 
-
-import { Navigate, Route, Routes } from 'react-router-dom';
-import AdminPage from './Pages/admin';
-import DashboardPage from './Pages/dashboardPage';
-import FooterComp from './components/commonComponents/footer/Footer';
+import { Navigate, Route, Routes } from "react-router-dom";
+import AdminPage from "./Pages/admin";
+import DashboardPage from "./Pages/dashboardPage";
+import FooterComp from "./components/commonComponents/footer/Footer.js";
 // import FreeMembersPage from './Pages/members/freeMembersPage';
 // import AddNewMembersPage from './Pages/members/freeMembersPage/addnewMembersPage';
 // import MembersDetail from './Components/members/freeMembers/allMembers/MembersDetail';
@@ -17,7 +17,7 @@ import FooterComp from './components/commonComponents/footer/Footer';
 // import ReligionsPage from './Pages/members/profileAttribute/religionsPage';
 // import CastePage from './Pages/members/profileAttribute/castePage';
 // import SubCastepage from './Pages/members/profileAttribute/subCastePage';
-// import EditSubCasteInfo from './Components/members/profileAttribute/subCaste/EditSubCasteInfo.js';
+// import EditSubCasteInfo from './Components/members/profileAttribute/subCaste/EditSubCasteInfo';
 // import MemberLanguagePage from './Pages/members/profileAttribute/memberLanguagePage';
 // import CountryPage from './Pages/members/profileAttribute/countryPage';
 // import StatePage from './Pages/members/profileAttribute/statePage';
@@ -90,17 +90,22 @@ import FooterComp from './components/commonComponents/footer/Footer';
 // import EmailTempletPage from './Pages/settings/emailTemplates/Index';
 // import SocialMediaLogInPage from './Pages/settings/socialMediaLogIn/Index';
 // import PremiumMembersPage from './Pages/members/premiumMembersPage';
-
+import BookingPage from "./Pages/modules/bookings/index.js";
+import AddBooking from "./components/modules/booking/AddBooking.js";
+import Hotelspage from "./Pages/modules/hotels/index.js";
+import RoomsPage from "./Pages/modules/rooms/index.js";
+import AddHotel from "./components/modules/hotels/addHotel/AddHotel.js";
+import EditHotel from "./components/modules/hotels/editHotel/EditHotel.js";
+import AddRoom from "./components/modules/rooms/addRoom/AddRoom.js";
+import TaxesPage from "./Pages/modules/taxes/index.js";
 
 function App() {
-
-
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Navigate to={'/admin'} />} />
-        <Route path='/admin' element={<AdminPage />}>
-          <Route path='' element={<DashboardPage />} />
+        <Route path="/" element={<Navigate to={"/admin"} />} />
+        <Route path="/admin" element={<AdminPage />}>
+          <Route path="" element={<DashboardPage />} />
           {/* <Route path='members' element={<FreeMembersPage />} />
           <Route path='premium-members' element={<PremiumMembersPage />} />
           <Route path='members/create' element={<AddNewMembersPage />} />
@@ -183,13 +188,40 @@ function App() {
           <Route path='email-templates' element={<EmailTempletPage />} />
           <Route path='social-media-login-settings' element={<SocialMediaLogInPage />} />
 
-          <Route path='staffs' element={<AllStaffsPage/>} />
-          <Route path='staffs/Edit' element={<StaffsEdit  />} />
+          <Route path='staffs' element={<AllStaffsPage />} />
+          <Route path='staffs/Edit' element={<StaffsEdit />} />
           <Route path='staffs/create' element={<AddNewStaffs />} />
           <Route path='roles' element={<StaffRolesPage />} />
           <Route path='roles/create' element={<AddnewRole />} />
-          <Route path='roles/Edit' element={<StaffRolesEdit/>} /> */}
+          <Route path='roles/Edit' element={<StaffRolesEdit />} />
 
+
+
+          {/* agonda */}
+
+          <Route path="booking" element={<BookingPage />} />
+          <Route path="add_booking" element={<AddBooking />} />
+
+          {/* HOTELS---DAUD--- */}
+          {/* HOTELS */}
+          <Route path="Hotels" element={<Hotelspage />} />
+          <Route
+            path="Hotels/add-hotel"
+            element={<AddHotel title="Add Hotel" />}
+          />
+          <Route
+            path="Hotels/Edit-hotel"
+            element={<EditHotel title="Edit Hotel" />}
+          />
+
+          {/* ---ROOMS--- */}
+          <Route path="rooms" element={<RoomsPage />} />
+          <Route path="rooms/addroom" element={<AddRoom />} />
+
+          {/* --taxes */}
+
+          <Route path="rooms" element={<TaxesPage />} />
+          {/* agonda */}
         </Route>
       </Routes>
       <FooterComp />
@@ -197,4 +229,3 @@ function App() {
   );
 }
 export default App;
-
