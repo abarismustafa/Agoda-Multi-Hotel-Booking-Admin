@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Aside from '../../Components/aside/Aside'
-import Header from '../../Components/commonComponents/header/Header'
+import Aside from '../../components/aside/Aside'
+import Header from '../../components/commonComponents/header/Header'
 
 
 function AdminPage() {

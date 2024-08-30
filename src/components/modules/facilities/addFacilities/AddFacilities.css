@@ -1,0 +1,121 @@
+/* Custom styles for the Tabs component */
+.custom-tabs {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.custom-tabs .nav-tabs {
+    border-bottom: none;
+    background-color: #343a40;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    gap: 2px;
+    /* Add a gap between the tab buttons */
+    justify-content: flex-start;
+}
+
+.custom-tabs .nav-tabs .nav-item {
+    margin: 0 3px;
+}
+
+.custom-tabs .nav-tabs .nav-link {
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    flex: 0 0 auto;
+    /* Ensure the width adjusts to the content */
+}
+
+.custom-tabs .nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+}
+
+.custom-tabs .nav-tabs .nav-link:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.custom-tabs .tab-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-tabs .tab-content .tab-pane {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Custom styles for the EngServices component */
+.eng-services-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.eng-services-titlebar {
+    margin-bottom: 20px;
+}
+
+.eng-services-titlebar h5 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.eng-services-form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.eng-services-input,
+.eng-services-select,
+.eng-services-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.eng-services-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.eng-services-radio-group input {
+    margin-right: 5px;
+}
+
+.eng-services-radio-group label {
+    margin-bottom: 0;
+}
+
+.eng-services-jodit-editor {
+    margin-top: 10px;
+}
+
+.eng-services-jodit-editor .jodit-wysiwyg {
+    min-height: 150px;
+}

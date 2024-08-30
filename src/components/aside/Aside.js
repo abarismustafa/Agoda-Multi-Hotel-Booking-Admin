@@ -70,21 +70,21 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="members" className="aiz-side-nav-link  ">
-                      <span className="aiz-side-nav-text">Free Members</span>
+                    <Link to="services" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Services</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="premium-members" className="aiz-side-nav-link  ">
-                      <span className="aiz-side-nav-text">Premium Members</span>
+                    <Link to="facilities" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Facilities</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
                     <Link
-                      to="member-bulk-add/index"
+                      to="destinations"
                       className="aiz-side-nav-link"
                     >
-                      <span className="aiz-side-nav-text">Bulk Member Add</span>
+                      <span className="aiz-side-nav-text">Destinations</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
