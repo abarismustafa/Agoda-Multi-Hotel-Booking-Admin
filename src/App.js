@@ -92,12 +92,16 @@ import FooterComp from './components/commonComponents/footer/Footer';
 // import PremiumMembersPage from './Pages/members/premiumMembersPage';
 import BookingPage from './Pages/modules/bookings/index.js';
 import AddBooking from './components/modules/booking/AddBooking.js';
-import Services from './components/modules/services/Services.js';
+import ActivitesPage from './Pages/modules/Activities/index.js';
+import AddActivity from './components/modules/Activity/AddActivity.js';
+import ActivitesSessionPage from './Pages/modules/ActivitiesSession/index.js';
+import AddActivitysess from './components/modules/Activitysession/AddActivity.js';
 import Service from './Pages/modules/services/index.js';
 import AddServices from './components/modules/services/addServices/AddServices.js';
-import Facilitie from './Pages/modules/facilities/index.js';
 import AddFacilities from './components/modules/facilities/addFacilities/AddFacilities.js';
+import Facilitie from './Pages/modules/facilities/index.js';
 import Destination from './Pages/modules/destination/index.js';
+
 
 function App() {
 
@@ -108,7 +112,7 @@ function App() {
         <Route path='/' element={<Navigate to={'/admin'} />} />
         <Route path='/admin' element={<AdminPage />}>
           <Route path='' element={<DashboardPage />} />
-          {/* <Route path='members' element={<FreeMembersPage />} />
+          {/* {/* <Route path='members' element={<FreeMembersPage />} />
           <Route path='premium-members' element={<PremiumMembersPage />} />
           <Route path='members/create' element={<AddNewMembersPage />} />
           <Route path='members/members-detail' element={<MembersDetail />} />
@@ -204,6 +208,14 @@ function App() {
           <Route path='facilities' element={< Facilitie  />} />
           <Route path='add_facilities' element={< AddFacilities  />} />
           <Route path='destinations' element={< Destination  />} />
+          <Route path='activate_list' element={<ActivitesPage />} />
+          <Route path='activate_add' element={<AddActivity />} />
+
+          <Route path='activate_sessions_list' element={<ActivitesSessionPage />} />
+          <Route path='activate_sessions_add' element={<AddActivitysess />} />
+
+          <Route path='*' element={<h3>NO PAGE FOUND .</h3>} />
+
 
           {/* agonda */}
 

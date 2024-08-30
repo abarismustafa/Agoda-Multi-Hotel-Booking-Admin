@@ -1,0 +1,76 @@
+.table-responsive {
+    overflow-x: auto;
+    /* Allows horizontal scrolling on small screens */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Button styling */
+.add-entry-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+.add-entry-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .add-entry-button {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .room-table-container {
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        display: block;
+        text-align: right;
+    }
+
+    th::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}

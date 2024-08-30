@@ -75,6 +75,16 @@ function Aside() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
+                    <Link to="activate_list" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Activate</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="activate_sessions_list" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Activate Sessions</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
                     <Link to="facilities" className="aiz-side-nav-link  ">
                       <span className="aiz-side-nav-text">Facilities</span>
                     </Link>
