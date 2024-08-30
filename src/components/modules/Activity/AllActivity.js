@@ -1,20 +1,19 @@
 import { useState } from "react"
-import { Table } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-function AllBooking() {
-  const [dropdown, setDropdown] = useState(false);
-  return (
-    <>
-      <div className="row">
-        <div className="col-lg-12">
-          <div className="card">
-            <div className="card-header row gutters-5">
-              <div className="col text-center text-md-left">
-                <h5 className="mb-md-0 h6">All Bookings</h5>
-              </div>
-              <div className="col-md-3">
-                {/* <form id="sort_members" >
+function AllActivity() {
+    const [dropdown, setDropdown] = useState(false)
+    return (
+        <>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="card">
+                        <div className="card-header row gutters-5">
+                            <div className="col text-center text-md-left">
+                                <h5 className="mb-md-0 h6">All Bookings</h5>
+                            </div>
+                            <div className="col-md-3">
+                                {/* <form id="sort_members" >
                                     <div className="input-group input-group-sm">
                                         <input type="text" className="form-control" id="search" name="search" placeholder="Type first name / last name / ID & Enter" fdprocessedid="hh7lxk" />
                                     </div>
@@ -22,54 +21,36 @@ function AllBooking() {
                             </div>
                         </div>
                         <div className="card-body">
-                            <Table striped bordered hover size="sm">
+                            <table className="table aiz-table mb-0 footable footable-1 breakpoint-xl" style={{}}>
                                 <thead>
                                     <tr className="footable-header">
-                                        <th className="footable-first-visible" >ID</th>
-                                        <th >
-                                            Hotel</th>
-                                        <th >Customer</th>
-                                        <th data-breakpoints="md" >Check-in </th>
-                                        <th data-breakpoints="md" >Check-out</th>
-                                        <th data-breakpoints="md" >Nights</th>
-                                        <th data-breakpoints="md" >Adults</th>
-                                        <th data-breakpoints="md" >Children</th>
-                                        <th data-breakpoints="md" >Total</th>
-                                        <th className="text-right footable-last-visible" >Status</th>
-                                        <th data-breakpoints="md" >Added on </th>
-                                        <th data-breakpoints="md" >Updated on </th>
-                                        <th data-breakpoints="md" >Actions</th>
+                                        <th className="footable-first-visible" style={{ display: 'table-cell' }}>ID</th>
+                                        <th style={{ display: 'table-cell' }}>
+                                            Image</th>
+                                        <th style={{ display: 'table-cell' }}>Title</th>
+                                        <th data-breakpoints="md" style={{ display: 'table-cell' }}>Home </th>
+                                        <th data-breakpoints="md" style={{ display: 'table-cell' }}>Status</th>
+                                        <th data-breakpoints="md" style={{ display: 'table-cell' }}>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td className="footable-first-visible" >1</td>
-                                        <td >
-
+                                        <td className="footable-first-visible" style={{ display: 'table-cell' }}>1</td>
+                                        <td style={{ display: 'table-cell' }}>--
                                         </td>
-                                        <td >20230248</td>
-                                        <td >Jagan Eakambaram</td>
-                                        <td >Male</td>
-                                        <td >
-                                            <span className="badge badge-inline badge-success">Approved</span>
-                                        </td>
-                                        <td >
-                                            0
-                                        </td>
-                                        <td >22-02-2023</td>
-                                        <td >
+                                        <td style={{ display: 'table-cell' }}>222</td>
+                                        <td style={{ display: 'table-cell' }}>20230248</td>
+                                        <td style={{ display: 'table-cell' }}>
                                             <span className="badge badge-inline badge-success">Active</span>
                                         </td>
-                                        <td >
-                                            <span className="badge badge-inline badge-success">Active</span>
+                                        <td style={{ display: 'table-cell' }}>
+                                            <button className="btn btn-secondary btn-sm me-2">Edit</button>
+                                            <button className="btn btn-danger btn-sm">Delete</button>
                                         </td>
-                                        <td >20230248</td>
-                                        <td >Jagan Eakambaram</td>
-                                        <td >Male</td>
 
 
 
-                    {/* <td className="text-right footable-last-visible" style={{ display: 'table-cell' }}>
+                                        {/* <td className="text-right footable-last-visible" style={{ display: 'table-cell' }}>
                                             <div className="btn-group mb-2">
                                                 <div className="btn-group">
                                                     <button type="button" className="btn py-0" aria-expanded="false" onClick={() => { setDropdown(!dropdown) }}>
@@ -90,7 +71,7 @@ function AllBooking() {
                                     </tr>
 
                                 </tbody>
-                            </Table>
+                            </table>
                             <div className="aiz-pagination">
                             </div>
                         </div>
@@ -100,4 +81,4 @@ function AllBooking() {
         </>
     )
 }
-export default AllBooking;
+export default AllActivity

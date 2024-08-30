@@ -1,4 +1,153 @@
+import { useState } from "react";
+
+import '../booking/addBooking.css'
 function AddBooking() {
+
+    const [entries, setEntries] = useState([
+        { id: 1, hotel: '', room: '', description: '', adults: '', children: '', number: '', taxRate: '', amount: '' }
+    ]);
+
+    const handleAddEntry = () => {
+        const newEntry = { id: entries.length + 1, hotel: '', room: '', description: '', adults: '', children: '', number: '', taxRate: '', amount: '' };
+        setEntries([...entries, newEntry]);
+    };
+
+    const handleRemoveEntry = (id) => {
+        const updatedEntries = entries.filter(entry => entry.id !== id);
+        setEntries(updatedEntries);
+    };
+
+
+    const [rows, setRows] = useState([
+        {
+            id: 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            taxRate: "",
+            amount: "",
+        },
+    ]);
+
+    // Function to handle adding a new row
+    const handleAddRow = () => {
+        const newRow = {
+            id: rows.length + 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            taxRate: "",
+            amount: "",
+        };
+        setRows([...rows, newRow]);
+    };
+
+    // Function to handle removing a row
+    const handleRemoveRow = (id) => {
+        const updatedRows = rows.filter((row) => row.id !== id);
+        setRows(updatedRows);
+    };
+
+    // Function to handle input changes
+    const handleChange = (id, field, value) => {
+        const updatedRows = rows.map((row) =>
+            row.id === id ? { ...row, [field]: value } : row
+        );
+        setRows(updatedRows);
+    };
+
+
+    const [rowsExtraService, setRowsExtraService] = useState([
+        {
+            id: 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            tax_rate: "",
+            amount: "",
+        },
+    ]);
+
+    // Function to handle adding a new row
+    const handleAddExtraServices = () => {
+        const newRow = {
+            id: rowsExtraService.length + 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            taxRate: "",
+            amount: "",
+        };
+        setRowsExtraService([...rowsExtraService, newRow]);
+    };
+
+    // Function to handle removing a row
+    const handleRemoveExtraServices = (id) => {
+        const updatedRows = rowsExtraService.filter((row) => row.id !== id);
+        setRowsExtraService(updatedRows);
+    };
+
+    // Function to handle input changes
+    const handleChangeeExtraServices = (id, field, value) => {
+        const updatedRows = rowsExtraService.map((row) =>
+            row.id === id ? { ...row, [field]: value } : row
+        );
+        setRowsExtraService(updatedRows);
+    };
+
+
+
+
+
+    const [rowsTax, setRowsTax] = useState([
+        {
+            id: 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            tax_rate: "",
+            amount: "",
+        },
+    ]);
+
+    // Function to handle adding a new row
+    const handleAddTax = () => {
+        const newRow = {
+            id: rowsTax.length + 1,
+            title: "",
+            adults: "",
+            children: "",
+            duration: "",
+            date: "",
+            taxRate: "",
+            amount: "",
+        };
+        setRowsTax([...rowsTax, newRow]);
+    };
+
+    // Function to handle removing a row
+    const handleRemoveTax = (id) => {
+        const updatedRows = rowsTax.filter((row) => row.id !== id);
+        setRowsTax(updatedRows);
+    };
+
+    // Function to handle input changes
+    const handleChangeeTax = (id, field, value) => {
+        const updatedRows = rowsTax.map((row) =>
+            row.id === id ? { ...row, [field]: value } : row
+        );
+        setRowsTax(updatedRows);
+    };
   return (
     <>
       <div className="aiz-main-content">

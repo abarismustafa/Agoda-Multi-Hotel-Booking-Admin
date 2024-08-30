@@ -99,14 +99,26 @@ import EditHotel from "./components/modules/hotels/editHotel/EditHotel.js";
 import AddRoom from "./components/modules/rooms/addRoom/AddRoom.js";
 import TaxesPage from "./Pages/modules/taxes/index.js";
 
+import Service from "./Pages/modules/services/index.js"
+import AddServices from "./components/modules/services/addServices/AddServices.js"
+import Facilitie from "./Pages/modules/facilities/index.js"
+import AddFacilities from "./components/modules/facilities/addFacilities/AddFacilities.js"
+import Destination from "./Pages/modules/destination/index.js"
+
+import AddActivitysess from "./components/modules/Activitysession/AddActivity.js";
+import ActivitesPage from "./Pages/modules/Activities/index.js";
+import AddActivity from "./components/modules/Activity/AddActivity.js";
+import ActivitesSessionPage from "./Pages/modules/ActivitiesSession/index.js";
+
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Navigate to={"/admin"} />} />
-        <Route path="/admin" element={<AdminPage />}>
-          <Route path="" element={<DashboardPage />} />
-          {/* <Route path='members' element={<FreeMembersPage />} />
+        <Route path='/' element={<Navigate to={'/admin'} />} />
+        <Route path='/admin' element={<AdminPage />}>
+          <Route path='' element={<DashboardPage />} />
+          {/* {/* <Route path='members' element={<FreeMembersPage />} />
           <Route path='premium-members' element={<PremiumMembersPage />} />
           <Route path='members/create' element={<AddNewMembersPage />} />
           <Route path='members/members-detail' element={<MembersDetail />} />
@@ -129,7 +141,6 @@ function App() {
           <Route path='family-values' element={<FamilyValuesPage />} />
           <Route path='family-status' element={<FamilyStatusPage />} />
           <Route path='marital-statuses' element={<MaritalStatusPage />} />
-
           <Route path='wallet-transaction-history' element={<WalletTransitionHistoryPages />} />
           <Route path='manual-wallet-recharge-requests' element={<ManualWalletRechargePage />} />
           <Route path='happy-story' element={<HappyStoriesPage />} />
@@ -145,8 +156,6 @@ function App() {
           <Route path='referal/users' element={<ReferalUserPag />} />
           <Route path='referal/earnings' element={<ReferalEarningPage />} />
           <Route path='wallet-withdraw-requests' element={<WalletWithdrowPage />} />
-
-
           <Route path='packages' element={<PremiumPackagesPage />} />
           <Route path='packages/editPackage' element={< EditPackageInfo />} />
           <Route path='packages/create' element={< AddNewPackage />} />
@@ -187,13 +196,12 @@ function App() {
           <Route path='payment-methods-settings' element={<PaymentMethordPage />} />
           <Route path='email-templates' element={<EmailTempletPage />} />
           <Route path='social-media-login-settings' element={<SocialMediaLogInPage />} />
-
           <Route path='staffs' element={<AllStaffsPage />} />
           <Route path='staffs/Edit' element={<StaffsEdit />} />
           <Route path='staffs/create' element={<AddNewStaffs />} />
           <Route path='roles' element={<StaffRolesPage />} />
           <Route path='roles/create' element={<AddnewRole />} />
-          <Route path='roles/Edit' element={<StaffRolesEdit />} />
+          <Route path='roles/Edit' element={<StaffRolesEdit />} /> */}
 
 
 
@@ -201,6 +209,18 @@ function App() {
 
           <Route path="booking" element={<BookingPage />} />
           <Route path="add_booking" element={<AddBooking />} />
+          <Route path='services' element={<Service />} />
+          <Route path='add_services' element={<AddServices />} />
+          <Route path='facilities' element={< Facilitie  />} />
+          <Route path='add_facilities' element={< AddFacilities  />} />
+          <Route path='destinations' element={< Destination  />} />
+          <Route path='activate_list' element={<ActivitesPage />} />
+          <Route path='activate_add' element={<AddActivity />} />
+
+          <Route path='activate_sessions_list' element={<ActivitesSessionPage />} />
+          <Route path='activate_sessions_add' element={<AddActivitysess />} />
+
+          <Route path='*' element={<h3>NO PAGE FOUND .</h3>} />
 
           {/* HOTELS---DAUD--- */}
           {/* HOTELS */}

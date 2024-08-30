@@ -81,22 +81,40 @@ function Aside() {
                       <span className="aiz-side-nav-text">Hotels</span>
                     </Link>
                   </li>
+
                   <li className="aiz-side-nav-item">
                     <Link to="rooms" className="aiz-side-nav-link  ">
                       <span className="aiz-side-nav-text">Rooms</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="premium-members" className="aiz-side-nav-link  ">
-                      <span className="aiz-side-nav-text">Premium Members</span>
+                    <Link to="services" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Services</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="activate_list" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Activate</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
                     <Link
-                      to="member-bulk-add/index"
-                      className="aiz-side-nav-link"
+                      to="activate_sessions_list"
+                      className="aiz-side-nav-link  "
                     >
-                      <span className="aiz-side-nav-text">Bulk Member Add</span>
+                      <span className="aiz-side-nav-text">
+                        Activate Sessions
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="facilities" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Facilities</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="destinations" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Destinations</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
