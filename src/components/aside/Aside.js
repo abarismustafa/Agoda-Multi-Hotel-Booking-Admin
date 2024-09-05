@@ -17,13 +17,13 @@ function Aside() {
   const [websiteSetup, setWebsiteSetup] = useState(false);
   const [system, setSystem] = useState(false);
 
-  const [staffs, setStaffs] = useState(false)
+  const [staffs, setStaffs] = useState(false);
 
   const hideModal = (event) => {
     // document.body.classNameList.remove('mobile-menu-visible');
     document.getElementById("myDIV").className = "";
     this.setState({ showModal: false });
-  }
+  };
 
   return (
     <>
@@ -112,37 +112,78 @@ function Aside() {
                       <span className="aiz-side-nav-text">Facilities</span>
                     </Link>
                   </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="taxes" className="aiz-side-nav-link  ">
+                      <span className="aiz-side-nav-text">Taxes</span>
+                    </Link>
+                  </li>
                   <li className="aiz-side-nav-item">
                     <Link to="destinations" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Destinations</span>
                     </Link>
                   </li>
+
                   <li className="aiz-side-nav-item">
-                    <Link to="deleted_members" className="aiz-side-nav-link">
-                      <span className="aiz-side-nav-text">Deleted Members</span>
+                    <Link to="menus" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Menus</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="lang" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Languages</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="location" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Location</span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="reported-members/all"
-                      className="aiz-side-nav-link"
-                    >
-                      <span className="aiz-side-nav-text">
-                        Reported Members
-                      </span>
+                    <Link to="currencies" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Currencies</span>
                     </Link>
                   </li>
+
                   <li className="aiz-side-nav-item">
-                    <Link
-                      to="unapproved-profile-pictures"
-                      className="aiz-side-nav-link"
-                    >
-                      <span className="aiz-side-nav-text">
-                        Unapproved Profile Pictures
-                      </span>
+                    <Link to="users" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Users</span>
                     </Link>
                   </li>
+
                   <li className="aiz-side-nav-item">
+                    <Link to="email_content" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Emails-Content</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="text" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Text</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="tags" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Tags</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="social-links" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Social links</span>
+                    </Link>
+                  </li>
+
+                  <li className="aiz-side-nav-item">
+                    <Link to="popup" className="aiz-side-nav-link">
+                      <span className="aiz-side-nav-text">Popup</span>
+                    </Link>
+                  </li>
+
+                  {/* <li className="aiz-side-nav-item">
                     <Link
                       to="#"
                       className="aiz-side-nav-link"
@@ -228,17 +269,7 @@ function Aside() {
                         </Link>
                       </li>
                     </ul>
-                  </li>
-                  <li className="aiz-side-nav-item">
-                    <Link
-                      to="member-profile-sections"
-                      className="aiz-side-nav-link"
-                    >
-                      <span className="aiz-side-nav-text">
-                        Profile Sections
-                      </span>
-                    </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               {/* Premium Packages */}

@@ -97,10 +97,7 @@ function Language() {
                         <td style={{ display: "table-cell" }}>en</td>
                         <td style={{ display: "table-cell" }}>
                           <label className="aiz-switch aiz-switch-success mb-0">
-                            <input
-                              defaultValue={1}
-                              type="checkbox"
-                            />
+                            <input defaultValue={1} type="checkbox" />
                             <span className="slider round" />
                           </label>
                         </td>
@@ -135,10 +132,7 @@ function Language() {
                         <td style={{ display: "table-cell" }}>bd</td>
                         <td style={{ display: "table-cell" }}>
                           <label className="aiz-switch aiz-switch-success mb-0">
-                            <input
-                              defaultValue={2}
-                              type="checkbox"
-                            />
+                            <input defaultValue={2} type="checkbox" />
                             <span className="slider round" />
                           </label>
                         </td>
@@ -174,8 +168,7 @@ function Language() {
                         <td
                           className="footable-first-visible"
                           style={{ display: "table-cell" }}
-                        >
-                        </td>
+                        ></td>
                         <td style={{ display: "table-cell" }}>polski</td>
                         <td style={{ display: "table-cell" }}>pl</td>
                         <td style={{ display: "table-cell" }}>
