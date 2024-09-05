@@ -99,25 +99,49 @@ import EditHotel from "./components/modules/hotels/editHotel/EditHotel.js";
 import AddRoom from "./components/modules/rooms/addRoom/AddRoom.js";
 import TaxesPage from "./Pages/modules/taxes/index.js";
 
-import Service from "./Pages/modules/services/index.js"
-import AddServices from "./components/modules/services/addServices/AddServices.js"
-import Facilitie from "./Pages/modules/facilities/index.js"
-import AddFacilities from "./components/modules/facilities/addFacilities/AddFacilities.js"
-import Destination from "./Pages/modules/destination/index.js"
+import Service from "./Pages/modules/services/index.js";
+import AddServices from "./components/modules/services/addServices/AddServices.js";
+import Facilitie from "./Pages/modules/facilities/index.js";
+import AddFacilities from "./components/modules/facilities/addFacilities/AddFacilities.js";
+import Destination from "./Pages/modules/destination/index.js";
 
 import AddActivitysess from "./components/modules/Activitysession/AddActivity.js";
 import ActivitesPage from "./Pages/modules/Activities/index.js";
 import AddActivity from "./components/modules/Activity/AddActivity.js";
 import ActivitesSessionPage from "./Pages/modules/ActivitiesSession/index.js";
+import AddNewTax from "./components/modules/taxes/addNewTax/AddNewTax.js";
+import MenusPage from "./Pages/modules/menus/index.js";
+import AddMenus from "./components/modules/menus/addMenus/AddMenus.js";
+// import LanguagesPage from "./Pages/modules/languages/index.js";
+import LocationPage from "./Pages/modules/location/index.js";
+import AddNewLocation from "./components/modules/location/addNewLocation/AddNewLocation.js";
+import EditNewLocation from "./components/modules/location/editnewLocation/Editnewlocation.js";
 
+import AddnewCurrencies from "./components/modules/currencies/addnewCurrencies/AddnewCurrencies.js";
+import EditCurrency from "./components/modules/currencies/editCurrency/EditCurrency.js";
+import CurrenciesPage from "./Pages/modules/currencies/index.js";
+import UsersPage from "./Pages/modules/users/index.js";
+import AddnewUsers from "./components/modules/users/addnewUsers/AddnewUsers.js";
+import SocialLinksPage from "./Pages/modules/socialLinks/index.js";
+import AddSocialLinks from "./components/modules/socialLinks/addSocialLinks/AddSocialLinks.js";
+import TagsPage from "./Pages/modules/tags/index.js";
+import AddNewTags from "./components/modules/tags/addnewTags/AddNewTags.js";
+import PopupPage from "./Pages/modules/popup/index.js";
+import AddnewPopup from "./components/modules/popup/addnewPopup/AddnewPopup.js";
+import TextPage from "./Pages/modules/text/index.js";
+import AddnewText from "./components/modules/text/addnewText/AddnewText.js";
+import EmailContentPage from "./Pages/modules/email-content/index.js";
+import AddnewEmailContent from "./components/modules/emailContent/addnewEmailContent/AddnewEmailContent.js";
+import LanguagesPage from "./Pages/modules/languages/index.js";
+import AddbewLanguage from "./components/modules/languages/addnewLanguage/AddbewLanguage.js";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Navigate to={'/admin'} />} />
-        <Route path='/admin' element={<AdminPage />}>
-          <Route path='' element={<DashboardPage />} />
+        <Route path="/" element={<Navigate to={"/admin"} />} />
+        <Route path="/admin" element={<AdminPage />}>
+          <Route path="" element={<DashboardPage />} />
           {/* {/* <Route path='members' element={<FreeMembersPage />} />
           <Route path='premium-members' element={<PremiumMembersPage />} />
           <Route path='members/create' element={<AddNewMembersPage />} />
@@ -202,26 +226,22 @@ function App() {
           <Route path='roles' element={<StaffRolesPage />} />
           <Route path='roles/create' element={<AddnewRole />} />
           <Route path='roles/Edit' element={<StaffRolesEdit />} /> */}
-
-
-
           {/* agonda */}
-
           <Route path="booking" element={<BookingPage />} />
           <Route path="add_booking" element={<AddBooking />} />
-          <Route path='services' element={<Service />} />
-          <Route path='add_services' element={<AddServices />} />
-          <Route path='facilities' element={< Facilitie  />} />
-          <Route path='add_facilities' element={< AddFacilities  />} />
-          <Route path='destinations' element={< Destination  />} />
-          <Route path='activate_list' element={<ActivitesPage />} />
-          <Route path='activate_add' element={<AddActivity />} />
-
-          <Route path='activate_sessions_list' element={<ActivitesSessionPage />} />
-          <Route path='activate_sessions_add' element={<AddActivitysess />} />
-
-          <Route path='*' element={<h3>NO PAGE FOUND .</h3>} />
-
+          <Route path="services" element={<Service />} />
+          <Route path="add_services" element={<AddServices />} />
+          <Route path="facilities" element={<Facilitie />} />
+          <Route path="add_facilities" element={<AddFacilities />} />
+          <Route path="destinations" element={<Destination />} />
+          <Route path="activate_list" element={<ActivitesPage />} />
+          <Route path="activate_add" element={<AddActivity />} />
+          <Route
+            path="activate_sessions_list"
+            element={<ActivitesSessionPage />}
+          />
+          <Route path="activate_sessions_add" element={<AddActivitysess />} />
+          <Route path="*" element={<h3>NO PAGE FOUND .</h3>} />
           {/* HOTELS---DAUD--- */}
           {/* HOTELS */}
           <Route path="Hotels" element={<Hotelspage />} />
@@ -233,14 +253,62 @@ function App() {
             path="Hotels/Edit-hotel"
             element={<EditHotel title="Edit Hotel" />}
           />
-
           {/* ---ROOMS--- */}
           <Route path="rooms" element={<RoomsPage />} />
           <Route path="rooms/addroom" element={<AddRoom />} />
-
           {/* --taxes */}
+          <Route path="taxes" element={<TaxesPage />} />
+          <Route path="taxes/addnewTax" element={<AddNewTax />} />
+          {/*------- menues------ */}
+          <Route path="menus" element={<MenusPage />} />
+          <Route path="menus/addmenus" element={<AddMenus />} />
 
-          <Route path="rooms" element={<TaxesPage />} />
+          {/*  -----location----*/}
+          <Route path="location" element={<LocationPage />} />
+          <Route path="location/addnewLocation" element={<AddNewLocation />} />
+          <Route
+            path="location/EditnewLocation"
+            element={<EditNewLocation />}
+          />
+          {/* ---currencies--- */}
+          <Route path="currencies" element={<CurrenciesPage />} />
+          <Route
+            path="currencies/addnewCurrencies"
+            element={<AddnewCurrencies />}
+          />
+          <Route path="currencies/EditCurrencies" element={<EditCurrency />} />
+          {/* ---USERS--- */}
+          <Route path="users" element={<UsersPage />} />
+          <Route path="users/addnewUsers" element={<AddnewUsers />} />
+          {/* -----SOCIAL LINKS---- */}
+          <Route path="social-links" element={<SocialLinksPage />} />
+          <Route
+            path="social-links/addsocialLinks"
+            element={<AddSocialLinks />}
+          />
+          {/* ----tags----- */}
+          <Route path="tags" element={<TagsPage />} />
+          <Route path="tags/addTags" element={<AddNewTags />} />
+
+          {/* ----popup--- */}
+          <Route path="popup" element={<PopupPage />} />
+          <Route path="popup/addpopup" element={<AddnewPopup />} />
+
+          {/* ---text-- */}
+          <Route path="text" element={<TextPage />} />
+          <Route path="text/addnewtext" element={<AddnewText />} />
+
+          {/* ---email--content */}
+          <Route path="email_content" element={<EmailContentPage />} />
+          <Route
+            path="email_content/addemailContent"
+            element={<AddnewEmailContent />}
+          />
+
+          {/* ---languages----- */}
+
+          <Route path="lang" element={<LanguagesPage />} />
+          <Route path="lang/addLang" element={<AddbewLanguage />} />
           {/* agonda */}
         </Route>
       </Routes>

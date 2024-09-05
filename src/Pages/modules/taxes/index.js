@@ -1,11 +1,11 @@
-import React from 'react'
+import Taxes from "../../../components/modules/taxes/Taxes";
 
 function TaxesPage() {
   return (
-    <div>
-      x
+    <div className="content_wrapper_main p-3">
+      <Taxes />
     </div>
-  )
+  );
 }
 
-export default TaxesPage
+export default TaxesPage;
